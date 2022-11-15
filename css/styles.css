@@ -97,35 +97,41 @@ body {
     }
 }
 
-#search-form {
+#search-form,
+#news-form {
     width: 100%;
     margin: 2em 0;
 }
 
 @media (min-width: 768px) {
-    #search-form {
+    #search-form,
+    #news-form {
         width: 50%;
         margin: 0;
     }
 }
 
-#search-form {
+#search-form,
+#news-form {
     border: 1px solid #626262;
     border-radius: 3px;
     padding: 5px 15px;
 }
 
-#search-form input {
+#search-form input,
+#news-form input {
     background-color: transparent;
     border: none;
     color: #FFF;
 }
 
-#search-form input:focus {
+#search-form input:focus,
+#news-form input:focus {
     box-shadow: none;
 }
 
-#search-form input::placeholder {
+#search-form input::placeholder,
+#news-form input::placeholder {
     color: #FFF;
 }
 
@@ -314,12 +320,16 @@ body {
 }
 
 #bottom-banner img {
-    max-width: 350px;
+    max-width: 180px;
 }
 
 @media(min-width: 768px) {
     #bottom-banner h2 {
         font-size: 6em;
+    }
+
+    #bottom-banner img {
+        max-width: 300px;
     }
 }
 
@@ -390,4 +400,95 @@ body {
 
 #insta6 {
     background-image: url('/img/insta6.jpg');
+}
+
+/* FOOTER */
+#footer-links-container {
+    border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    #footer .footer-column {
+        padding: 5em 2em;
+        
+    }
+}
+
+#footer-links-container li {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#footer-links-container a {
+    text-decoration: none;
+}
+
+#footer-links-container a:hover {
+    color: #C09578;
+}
+
+#footer-center {
+    margin: 20px auto;
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
+}
+
+#footer-center h3 {
+    font-weight: 900;
+}
+
+#footer-center .store-phone {
+    color: #C09578;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: -15px;
+}
+
+/* NEWSLETTER */
+#newsletter-container {
+    border-bottom: 1px solid #626262;
+    text-align: center;
+    padding: 20px;
+}
+
+#news-form {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+#news-form i {
+    font-size: 1.5em;
+}
+
+#news-form .btn {
+    color: #FFF;
+}
+
+#social-container {
+    margin: 20px auto;
+}
+
+#social-container i {
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    color: #626262;
+    transition: .3s;
+}
+
+#social-container i:hover {
+    color: #C09578;
+}
+
+#copy-container {
+    text-align: center;
+    padding: 30px;
 }
